@@ -56,39 +56,34 @@ div#section1{
     width:100%;
     height: 65vh;
     margin-bottom: 5rem;
-    
-}
-.header-content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 22rem;
-    left: 0;       
+    
 }
+
+
 .header-content  h1 {
     color: #fff;
     font-size: 70px;
     text-transform: uppercase;
     text-shadow: 2px 2px #000;
-    margin: 1rem;
+    margin: 20px 0 10px;
     font-family:sans-serif;
-    font-weight: 20
+    font-weight: 20;
+    text-align: start;
 }
   .header-content h4 {
     color: #fff;
     font-size: 25px;
     text-shadow: 1px 1px #333;
     font-weight: 100;
+    text-align: start;
+    margin: 10px 10px;
   }
 
  
   div#section2 .container{
-      /* padding: 5rem 0 0 0;  */
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -241,13 +236,16 @@ div.service p{
 
 }
 section#testimornial-area div.row{
-    margin: 5rem 0 0;
     display: flex;
     justify-content: center;
-    width: 100%;
-    
-    
-}
+    width: 100%; 
+ }
+ section#testimornial-area div.row.text-center{
+    margin: 60px 0 10px;
+ }
+ section#testimornial-area{
+     margin: 60px 0;
+ }
 .testimonial-content{
     display: flex;
     flex-direction: column;
@@ -284,4 +282,61 @@ section#testimornial-area div.row{
 .testimonial-content a:hover{
     color: rgb(24, 10, 88);
     background: #b4b1b1;
+}
+.tm-box{
+    display: flex;
+    flex-direction: column;
+    margin:  10px 0;
+    background: #f2f2f2;
+    align-items: center;
+    width: 1140px;
+
+
+}
+.tm-box-description{
+    padding: 30px;
+}
+a.content-link{
+    text-decoration: none;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 10px 30px;
+    color: #666666;
+    background: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+a.content-link:hover{
+color: rgb(24, 10, 88);
+background: #b4b1b1;
+}
+.tm-box h2{
+    margin: 20px 0 10px;
+    font-size: 20px;
+    color: #666666;
+}
+.tm-box-p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+.tm-box-p:nth-child(3){
+    padding-bottom: 20px;
+}
+
+section.contact-section{
+    background: url(./img/bg-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:70vh;
+}
+
+section#contact-area.contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
