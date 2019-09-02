@@ -332,11 +332,108 @@ section.contact-section{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height:70vh;
+    height:58vh;
 }
 
 section#contact-area.contact-section{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-section h1{
+    margin: 20px 0 30px;
+    font-size: 36px;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+    font-family: sans-serif;
+    text-align: center;
+}
+.contact-section p{
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    background: rgba(242, 242, 242, 0.4);
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    border-radius: 5px;
+    width: 690px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+}
+div.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control{
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    background: rgba(242, 242, 242, 0.4);
+    width: 317px;
+    border-radius: 5px;    
+}
+div.contact-content{
+    padding: 0 15px;
+}
+button.btn-default{
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #262628;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button.btn-default:hover{
+    background: #cdcdcd;
+    color: #333333;
+}
+textarea#comment.form-control{
+    height: 110px;
+    width: 319px;
+}
+footer#footer-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div.footer-content h1{
+    margin: 35px 0 25px;
+    color: #666666;
+    font-style: italic;
+    font-weight: 500;
+}
+div.footer-content p{
+    color: #999999;
+    font-style: italic;
+    margin-bottom: 30px;
+
+}
+hr{
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background-color:rgba(242, 242, 242, 0.4);
+}
+p.copy{
+    margin: 10px 0 30px;
+    color: #999999;
+    font-size: 12px;
 }
