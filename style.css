@@ -334,7 +334,7 @@ section.contact-section{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height:58vh;
+    min-height:58vh;
 }
 
 section#contact-area.contact-section{
@@ -363,7 +363,7 @@ section#contact-area.contact-section{
     color: #000000;
     border-radius: 5px;
     width: 690px;
-    height: 75px;
+    min-height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -444,18 +444,19 @@ button.navbar-toggle{
     display: none;
 }
 @media only screen and (max-width: 760px){ 
-    div#tmNavbar{
-        display: none;
+    .sticky-wrapper{
+       transform: translateY(-100%);
+       transition: all 0.3s ease-in-out;
+
     }  
    
     .navbar-nav{
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        position: fixed;
         background: #383E4C;
-        height: 100vh;
+        height: 55vh;
         width: 100%;
-        display: none;
     }
     .single-page-nav ul li {
         margin-top: 50px;
@@ -463,10 +464,14 @@ button.navbar-toggle{
     button.navbar-toggle{
         display: flex;
         flex-direction: column;
-        color: #666666;
         cursor: pointer;
         padding: 10px;
-        border: 1px solid #666666;
+        position: fixed;
+        z-index: 2;
+        background: none;
+        border: none;
+
+
     }
     div.navbar-header{      
         height: 0;
@@ -477,11 +482,55 @@ button.navbar-toggle{
         height: 2px;
         background-color: #fff;
         margin: 5px;
+        z-index: 5;
 
     }
-  
+    
+    .nav-active{
+        transform: translateY(0%); 
+        transition: all 0.3s ease-in-out;
+    }
+    .blog-content{
+        width: 80%;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+    div.service{
+        width: 80%;
+    }
+    .tm-box img{
+        width: 100%;
+    }
 
+   section#testimornial-area div.tm-box{
+       width: 100%;
+       margin: auto;
+   }
+   div.col-lg-12{
+       width: 75%;
+   }
    
-   
+   section#contact-area.contact-section{
+       flex-wrap: wrap;
+       margin: auto;
+       width: 100%;
+   }
+   section#contact-area.contact-section .container{
+       width: 80%;
+   }
+   .contact-form{
+       flex-direction: column;
+       height: 60%;
+       width: 80%;
+   }
+   .contact-section p{
+       word-wrap: break-word;
+       text-align: center;
+   }
+  button.btn{
+      margin-left: auto;
+      margin-bottom: 15px;
+  }
+
 
 }
