@@ -501,6 +501,7 @@ button.navbar-toggle{
     }
     div.service{
         width: 80%;
+        height: 100%;
     }
     .tm-box img{
         width: 100%;
@@ -532,4 +533,24 @@ button.navbar-toggle{
   }
 
 
+}
+@media only screen and (max-width: 375px){
+    body{
+        overflow-x: hidden;
+        zoom: 100%;        
+    }
+
+    div.our-service{
+        height: 125%;
+    }
+   
+    .form-control{
+        width: 160%;
+    }
+    textarea#comment.form-control{
+        width: 235px;
+    }
+    div#section1{
+        height: 45vh;
+    }
 }
