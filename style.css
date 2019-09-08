@@ -445,8 +445,11 @@ button.navbar-toggle{
     display: none;
 }
 @media only screen and (max-width: 760px){ 
-    body{
+    html,body{
         overflow-x: hidden;
+    }
+    body{
+        position: relative;
     }
     .sticky-wrapper{
        transform: translateY(-100%);
@@ -546,9 +549,11 @@ div.our-service{
 
 }
 @media only screen and (max-width: 375px){
-    body{
+    html,body{
         overflow-x: hidden;
-        zoom: 100%;        
+    }
+    body{
+        position: relative;
     }
 
     div.our-service{
