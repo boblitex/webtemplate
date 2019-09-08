@@ -362,7 +362,7 @@ section#contact-area.contact-section{
     font-size: 16px;
     color: #000000;
     border-radius: 5px;
-    width: 690px;
+    max-width: 690px;
     min-height: 75px;
     display: flex;
     align-items: center;
@@ -387,6 +387,7 @@ div.form-group{
 }
 div.contact-content{
     padding: 0 15px;
+    width: 100%;
 }
 button.btn-default{
     margin-top: 20px;
@@ -444,6 +445,9 @@ button.navbar-toggle{
     display: none;
 }
 @media only screen and (max-width: 760px){ 
+    body{
+        overflow-x: hidden;
+    }
     .sticky-wrapper{
        transform: translateY(-100%);
        transition: all 0.3s ease-in-out;
@@ -491,7 +495,7 @@ button.navbar-toggle{
         transition: all 0.3s ease-in-out;
     }
     .blog-content{
-        width: 80%;
+        width: 65%;
         justify-content: center;
         margin: 2rem auto;
     }
@@ -509,12 +513,7 @@ button.navbar-toggle{
    div.col-lg-12{
        width: 75%;
    }
-   
-   section#contact-area.contact-section{
-       flex-wrap: wrap;
-       margin: auto;
-       width: 100%;
-   }
+ 
    section#contact-area.contact-section .container{
        width: 80%;
    }
