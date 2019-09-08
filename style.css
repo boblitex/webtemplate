@@ -518,11 +518,20 @@ button.navbar-toggle{
    section#contact-area.contact-section .container{
        width: 80%;
    }
+   textarea#comment.form-control{
+    width: 270px;
+}
+div.our-service{
+    height: 125%;
+}
    .contact-form{
        flex-direction: column;
        height: 60%;
        width: 80%;
    }
+   .form-control{
+    width: 160%;
+}
    .contact-section p{
        word-wrap: break-word;
        text-align: center;
@@ -531,6 +540,8 @@ button.navbar-toggle{
       margin-left: auto;
       margin-bottom: 15px;
   }
+
+
 
 
 }
